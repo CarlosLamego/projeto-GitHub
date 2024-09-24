@@ -1,3 +1,4 @@
+
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     if (validateEmptyInput(userName))
