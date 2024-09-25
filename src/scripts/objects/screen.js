@@ -30,15 +30,11 @@ const screen = {
                                             </div>`
         }
         let eventItens = ""
-        let counter = 0
         user.events.forEach(evento => {
-            if (evento.type === "PushEvent" && (counter < 10)) {
+            if (evento.type === "PushEvent") {
                 eventItens += `<li class="lista-evento"><h4 class="evento">${evento.repo.name}</h4> - ${evento.payload.commits[0].message}</li>`
-                counter = counter + 1
-                if (counter >= 10) return
-            } else if (evento.type === "CreateEvent" && (counter < 10)) {
+            } else if (evento.type === "CreateEvent") {
                 eventItens += `<li><h4 class="evento">${evento.repo.name}</h4> - Sem mensagem de commit</li>`
-                counter = counter + 1
             }
         })
         this.userProfile.innerHTML +=
