@@ -124,6 +124,10 @@ main {
 
 /* REPOSITORIES */
 
+.repositories.section{
+  padding-bottom: 35px;
+}
+
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
@@ -210,6 +214,11 @@ main {
 }
 
 /* EVENTS */
+
+.events.section{
+  padding: 0;
+}
+
 .container .profile-data .events h2{
   margin-bottom: 30px;
   text-align: center;
@@ -219,6 +228,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 h4.evento {
